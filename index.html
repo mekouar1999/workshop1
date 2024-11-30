@@ -3,11 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Authentification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4cb6ea, #1a73e8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .auth-container {
+            background-color: #ffffff;
+            color: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .auth-container h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .auth-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .auth-container input {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .auth-container button {
+            padding: 0.8rem;
+            background-color: #4cb6ea;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .auth-container button:hover {
+            background-color: #1a73e8;
+        }
+
+        .auth-container .footer {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .auth-container .footer a {
+            color: #4cb6ea;
+            text-decoration: none;
+        }
+
+        .auth-container .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Hello World</h1>
-    
+    <div class="auth-container">
+        <h1>Connexion</h1>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Adresse e-mail" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <div class="footer">
+            <p>Pas encore inscrit ? <a href="#">Créer un compte</a></p>
+        </div>
+    </div>
 </body>
 </html>
